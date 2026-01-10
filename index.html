@@ -28,9 +28,18 @@
               <h1>カフェ憩いのぜんさん</h1>
             </a>
           </div>
-          <div class="header_tel">
-            <span class="tel_icon">📞</span>
-            <a href="tel:" class="tel_number">お問い合わせ</a>
+          <div class="header_right">
+            <div class="header_tel">
+              <span class="tel_icon">📞</span>
+              <a href="tel:" class="tel_number">お問い合わせ</a>
+            </div>
+            <div class="menu_icon">
+              <button class="hamburger" aria-label="メニューを開く">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -44,10 +53,8 @@
         <li><a href="#karaoke">カラオケ</a></li>
         <li><a href="#access">アクセス</a></li>
       </ul>
-      <div class="menu_icon">
-        <a href="#menu"><span>メニュー開閉</span></a>
-      </div>
     </nav>
+    <div class="menu_overlay"></div>
   </header>
 
   <main>
@@ -55,7 +62,9 @@
 
     <!-- メインビジュアル -->
     <section id="home" class="main_visual">
-      <div class="main_visual_bg"></div>
+      <div class="main_visual_bg">
+        <img src="images/store-design.JPG" alt="カフェ憩いのぜんさん" class="main_visual_image">
+      </div>
       <div class="container gutters">
         <div class="row">
           <div class="col span_12">
@@ -80,10 +89,19 @@
               <h2 class="section_title vertical">ごあいさつ</h2>
             </div>
             <div class="section_content">
-              <p class="greeting_text">
-                カフェ憩いのぜんさんは、神奈川県座間市にあるのんびりとした時間を過ごしていただけるカフェです。<br class="sp-hide">
-                お一人様からグループまで、ゆっくりとお過ごしいただけます。<br class="sp-hide">
-                こだわりとして、カラオケも楽しめる空間となっております。<br class="sp-hide">
+              <p class="greeting_text pc-text">
+                カフェ憩いのぜんさんは、神奈川県座間市にあるのんびりとした時間を過ごしていただけるカフェです。<br>
+                お一人様からグループまで、ゆっくりとお過ごしいただけます。<br>
+                こだわりとして、カラオケも楽しめる空間となっております。<br>
+                どうぞお気軽にお立ち寄りください。
+              </p>
+              <p class="greeting_text sp-text">
+                カフェ憩いのぜんさんは<br>神奈川県座間市にある<br>
+                のんびりとした時間を<br>過ごしていただけるカフェです<br>
+                お一人様からグループまで<br>
+                ゆっくりとお過ごしいただけます<br>
+                こだわりとして、カラオケも<br>
+                楽しめる空間となっております<br>
                 どうぞお気軽にお立ち寄りください。
               </p>
               <p class="more">
@@ -101,7 +119,7 @@
         <div class="row">
           <div class="col span_6 concept_image">
             <figure>
-              <img src="images/concept.jpg" alt="コンセプト" onerror="this.style.display='none'">
+              <img src="images/bp-photo1.jpg" alt="コンセプト" onerror="this.style.display='none'">
             </figure>
           </div>
           <div class="col span_6 concept_text_wrapper">
@@ -110,10 +128,17 @@
               <h2 class="section_title vertical">コンセプト</h2>
             </div>
             <div class="section_content right">
-              <p class="concept_text">
-                のんびりしたい方が遊びに来てほしい<br class="sp-hide">
-                そんな想いから生まれたカフェです。<br class="sp-hide">
-                忙しい日常から離れて、ゆっくりとした時間をお過ごしください。<br class="sp-hide">
+              <p class="concept_text pc-text">
+                のんびりしたい方が遊びに来てほしい<br>
+                そんな想いから生まれたカフェです。<br>
+                忙しい日常から離れて、ゆっくりとした時間をお過ごしください。<br>
+                カラオケで気分転換もできます。
+              </p>
+              <p class="concept_text sp-text">
+                のんびりしたい方が遊びに来てほしい<br>
+                そんな想いから生まれたカフェです。<br>
+                忙しい日常から離れて、<br>
+                ゆっくりとした時間をお過ごしください。<br>
                 カラオケで気分転換もできます。
               </p>
               <p class="more">
@@ -132,10 +157,10 @@
         <div class="row">
           <div class="col span_6 menu_images">
             <figure class="menu_image_top">
-              <img src="images/menu1.jpg" alt="メニュー" onerror="this.style.display='none'">
+              <img src="images/bp-photo2.JPG" alt="メニュー" onerror="this.style.display='none'">
             </figure>
             <figure class="menu_image_bottom">
-              <img src="images/menu2.jpg" alt="メニュー" onerror="this.style.display='none'">
+              <img src="images/bp-photo3.JPG" alt="メニュー" onerror="this.style.display='none'">
             </figure>
           </div>
           <div class="col span_6 menu_text_wrapper">
@@ -144,12 +169,20 @@
               <h2 class="section_title vertical">メニュー</h2>
             </div>
             <div class="section_content right">
-              <p class="menu_text">
-                当店では、コーヒーや紅茶などのドリンクをはじめ、<br class="sp-hide">
-                サンドイッチやパスタなどの軽食、<br class="sp-hide">
-                ケーキやパフェなどのデザートをご用意しております。<br class="sp-hide">
-                職人が心を込めて作り上げた自慢のメニューで、<br class="sp-hide">
+              <p class="menu_text pc-text">
+                当店では、コーヒーや紅茶などのドリンクをはじめ、<br>
+                サンドイッチやパスタなどの軽食、<br>
+                ケーキやパフェなどのデザートをご用意しております。<br>
+                職人が心を込めて作り上げた自慢のメニューで、<br>
                 皆様をおもてなしします。
+              </p>
+              <p class="menu_text sp-text">
+                コーヒーや紅茶などのドリンクをはじめ<br>
+                サンドイッチやパスタなどの軽食<br>
+                ケーキやパフェなどのデザートを<br>
+                ご用意しております<br>
+                職人が心を込めて作り上げた<br>
+                自慢のメニューで皆様をおもてなしします
               </p>
               <p class="more">
                 <a href="#karaoke" class="diamond_button"><span>詳しくは<br>こちら</span></a>
@@ -167,7 +200,7 @@
         <div class="row">
           <div class="col span_4 karaoke_item">
             <figure>
-              <img src="images/karaoke1.jpg" alt="カラオケ" onerror="this.style.display='none'">
+              <img src="images/bp-photo1.jpg" alt="カラオケ" onerror="this.style.display='none'">
             </figure>
             <p class="more">
               <a href="#access" class="diamond_button"><span>詳しくは<br>こちら</span></a>
@@ -175,7 +208,7 @@
           </div>
           <div class="col span_4 karaoke_item">
             <figure>
-              <img src="images/karaoke2.jpg" alt="カラオケ" onerror="this.style.display='none'">
+              <img src="images/bp-photo2.JPG" alt="カラオケ" onerror="this.style.display='none'">
             </figure>
             <p class="more">
               <a href="#access" class="diamond_button"><span>詳しくは<br>こちら</span></a>
@@ -183,7 +216,7 @@
           </div>
           <div class="col span_4 karaoke_item">
             <figure>
-              <img src="images/karaoke3.jpg" alt="カラオケ" onerror="this.style.display='none'">
+              <img src="images/bp-photo3.JPG" alt="カラオケ" onerror="this.style.display='none'">
             </figure>
             <p class="more">
               <a href="#access" class="diamond_button"><span>詳しくは<br>こちら</span></a>
@@ -197,9 +230,14 @@
               <h2 class="section_title vertical">カラオケ</h2>
             </div>
             <div class="section_content">
-              <p class="karaoke_text">
-                当店のこだわりとして、カラオケも楽しめます。<br class="sp-hide">
+              <p class="karaoke_text pc-text">
+                当店のこだわりとして、カラオケも楽しめます。<br>
                 お友達同士やグループで、お歌を楽しみながらお過ごしください。
+              </p>
+              <p class="karaoke_text sp-text">
+                当店のこだわりとしてカラオケも楽しめます<br>
+                お友達同士やグループで<br>
+                お歌を楽しみながらお過ごしください。
               </p>
             </div>
           </div>
@@ -219,20 +257,19 @@
             </div>
             <div class="section_content">
               <p class="access_text">
-                <strong>住所</strong><br>
-                神奈川県座間市栗原2706-8<br><br>
-                <strong>アクセス</strong><br>
-                さがみ野駅 徒歩20分<br><br>
-                <strong>営業時間</strong><br>
-                火曜日～月曜日 11:00～16:00<br>
+                <strong>住所</strong>
+                神奈川県座間市栗原2706-8
+                <strong>アクセス</strong>
+                さがみ野駅 徒歩20分
+                <strong>営業時間</strong>
+                火曜日～月曜日 11:00～16:00
                 <span class="text-small">※年中無休</span>
               </p>
             </div>
           </div>
           <div class="col span_6 access_map">
-            <div class="map_placeholder">
-              <p>地図をここに表示</p>
-              <p class="text-small">（Googleマップなどを埋め込んでください）</p>
+            <div class="map_wrapper">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3248.840094413269!2d139.4214865!3d35.4835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018ff2c6217dbf5%3A0x50a5c166b28fd62c!2z44Kr44OV44Kn5oap44GE44Gu44Gc44KT44GV44KT!5e0!3m2!1sja!2sjp!4v1768040381277!5m2!1sja!2sjp" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
         </div>
@@ -244,13 +281,24 @@
       <div class="parallax_contact_info">
         <div class="container gutters">
           <p class="contact_logo">カフェ憩いのぜんさん</p>
-          <p class="contact_text">
+          <p class="contact_text pc-text">
             当店へのお問い合わせはこちらから。<br>
             <span class="tel">お電話でのお問い合わせも承っております。</span><br>
             [営業時間] 火曜日～月曜日 11:00～16:00<br>
             <span class="text-small">※年中無休</span><br>
             [アクセス] さがみ野駅 徒歩20分<br>
-            [住所] 神奈川県座間市栗原2706-8<br>
+            [住所] 神奈川県座間市栗原2706-8
+          </p>
+          <p class="contact_text sp-text">
+            当店へのお問い合わせはこちらから<br>
+            <span class="tel">お電話でのお問い合わせも承っております</span>
+            [営業時間]<br>
+            火曜日～月曜日 11:00～16:00<br>
+            <span class="text-small">※年中無休</span><br>
+            [アクセス]<br>
+            さがみ野駅 徒歩20分<br>
+            [住所]<br>
+            神奈川県座間市栗原2706-8
           </p>
         </div>
       </div>
@@ -279,8 +327,9 @@
       <div class="container">
         <div class="row">
           <div class="col span_12">
-            <p>Copyright &copy; カフェ憩いのぜんさん All Rights Reserved.<br>
-              【掲載の記事・写真・イラストなどの無断複写・転載を禁じます】</p>
+            <p class="pc-text">Copyright &copy; カフェ憩いのぜんさん All Rights Reserved.</p>
+            <p class="sp-text">Copyright &copy; カフェ憩いのぜんさん<br>
+              All Rights Reserved.</p>
           </div>
         </div>
       </div>

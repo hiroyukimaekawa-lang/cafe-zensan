@@ -2,9 +2,20 @@
 $(document).ready(function() {
   
   // モバイルメニューの開閉
-  $('.menu_icon a').on('click', function(e) {
+  $('.hamburger').on('click', function(e) {
     e.preventDefault();
-    $('.global_nav ul').toggleClass('active');
+    $(this).toggleClass('active');
+    $('.global_nav').toggleClass('active');
+    $('.menu_overlay').toggleClass('active');
+    $('body').toggleClass('menu-open');
+  });
+
+  // オーバーレイクリックでメニューを閉じる
+  $('.menu_overlay').on('click', function() {
+    $('.hamburger').removeClass('active');
+    $('.global_nav').removeClass('active');
+    $('.menu_overlay').removeClass('active');
+    $('body').removeClass('menu-open');
   });
 
   // スムーススクロール
@@ -18,7 +29,10 @@ $(document).ready(function() {
       
       // モバイルメニューを閉じる
       if ($(window).width() <= 768) {
-        $('.global_nav ul').removeClass('active');
+        $('.global_nav').removeClass('active');
+        $('.hamburger').removeClass('active');
+        $('.menu_overlay').removeClass('active');
+        $('body').removeClass('menu-open');
       }
     }
   });
@@ -43,7 +57,10 @@ $(document).ready(function() {
   // ウィンドウリサイズ時の処理
   $(window).resize(function() {
     if ($(window).width() > 768) {
-      $('.global_nav ul').removeClass('active');
+      $('.global_nav').removeClass('active');
+      $('.hamburger').removeClass('active');
+      $('.menu_overlay').removeClass('active');
+      $('body').removeClass('menu-open');
     }
   });
 
